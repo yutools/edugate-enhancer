@@ -1,6 +1,7 @@
 setupFonts();
 setupTheme();
 setupLogo();
+removeElements();
 
 function setupFonts() {
   const link1 = document.createElement("link");
@@ -48,4 +49,13 @@ function setupLogo() {
       // const svgElement = logoElement.querySelector("svg");
     })
     .catch((error) => console.error("Error fetching SVG:", error));
+}
+
+function removeElements() {
+  // remove texter (copyright) from footer
+  const footerCopyright = document
+    .querySelector("#footer")
+    .querySelector(".texter");
+
+  footerCopyright.innerHTML = "جميع الحقوق محفوظة جامعة اليمامة © 2024";
 }

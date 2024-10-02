@@ -31,6 +31,81 @@ body {
   }
 }
 
+#headerForm li a {
+  display: flex;
+  padding: 0;
+}
+
+[id*="menuForm:menuTable:"][id$=":Divs"] td {
+  background-color: var(--card-color) !important;
+}
+
+.ui-state-default1 {
+  border-style: none !important;
+}
+
+#menuForm\:menuTable tbody tr td div {
+  margin-bottom: 4px !important;
+}
+
+#menuForm\:menuTable tbody tr td div h3 {
+  border-radius: 8px !important;
+}
+
+h2 {
+  font-weight: bold !important;
+  color: #e0e0e0 !important;
+}
+
+.all_menu tr td {
+  color: #e0e0e0 !important;
+}
+
+.all_menu tr td a {
+  border-style: none !important;
+}
+
+.all_menu tr td a:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.top_menu {
+  border-radius: 8px !important;
+}
+
+#footer {
+  background: var(--card-color) url(/yu/skins/1/images/ar/orange_l.gif)
+    no-repeat right center !important;
+  border-style: none !important;
+  border-radius: 8px !important;
+}
+
+#footer .bottom_links ul li {
+  margin: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#footer .texter {
+  background: unset !important;
+  width: unset !important;
+  margin-top: 0;
+  color: var(--text-color) !important;
+}
+
+.bottom_links .fontTextMain {
+  color: var(--primary-color) !important;
+}
+
+.left_dash,
+.right_dash {
+  background-color: var(--card-color) !important;
+}
+
+.data_in_2 li {
+  color: var(--text-color) !important;
+}
+
 /* Root variables */
 :root {
   --primary-color: #f36c24 !important;
@@ -51,7 +126,7 @@ body {
   --card-color: #282828 !important;
   --text-color: #e0e0e0 !important;
   --link-color: #ffa500 !important;
-  --hover-color: lightgray !important;
+  --hover-color: #1f1f1f !important;
   --border-color: #666666 !important;
   --header-background-color: #1e1e1e !important;
   --header-text-color: white !important;
