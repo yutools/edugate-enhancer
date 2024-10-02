@@ -1,0 +1,17 @@
+* {
+  font-family: "Cairo", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variation-settings: "slnt" 0;
+}
+
+html {
+  background-image: none !important;
+}
+
+body {
+  background-color: white;
+}
+
+#container {
+  border: none !important;
+}

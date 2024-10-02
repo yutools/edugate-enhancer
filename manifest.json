@@ -13,8 +13,16 @@
   "content_scripts": [
     {
       "matches": ["https://edugate.yu.edu.sa/*"],
-      "css": ["scripts/styles.css"],
-      "js": ["scripts/content.js"]
+      "css": ["scripts/shared/styles.css"],
+      "js": ["scripts/shared/content.js"]
+    },
+    {
+      "matches": [
+        "https://edugate.yu.edu.sa/yu/init",
+        "https://edugate.yu.edu.sa/yu/ui/home.faces*"
+      ],
+      "css": ["scripts/home/styles.css"],
+      "js": ["scripts/home/content.js"]
     }
   ]
 }
