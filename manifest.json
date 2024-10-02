@@ -24,5 +24,11 @@
       "css": ["scripts/home/styles.css"],
       "js": ["scripts/home/content.js"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.svg"],
+      "matches": ["https://edugate.yu.edu.sa/*"]
+    }
   ]
 }

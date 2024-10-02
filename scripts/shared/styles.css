@@ -15,3 +15,70 @@ body {
 #container {
   border: none !important;
 }
+
+#container #top .logo {
+  background: unset !important;
+}
+
+#container #top .logo svg {
+  width: 240px;
+  height: 50px;
+}
+
+[data-theme="dark"] {
+  #container #top .logo svg path {
+    fill: var(--text-color) !important;
+  }
+}
+
+/* Root variables */
+:root {
+  --primary-color: #f36c24 !important;
+  --background-color: white !important;
+  --card-color: #e3e3e3 !important;
+  --text-color: black !important;
+  --link-color: #f36c24 !important;
+  --hover-color: gray !important;
+  --border-color: #000000 !important;
+  --header-background-color: black !important;
+  --header-text-color: white !important;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #ff8c00 !important;
+  --background-color: #1d1d1d !important;
+  --card-color: #282828 !important;
+  --text-color: #e0e0e0 !important;
+  --link-color: #ffa500 !important;
+  --hover-color: lightgray !important;
+  --border-color: #666666 !important;
+  --header-background-color: #1e1e1e !important;
+  --header-text-color: white !important;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --primary-color: #f36c24 !important;
+  --background-color: #ffffff !important;
+  --card-color: #e3e3e3 !important;
+  --text-color: #333333 !important;
+  --link-color: #f36c24 !important;
+  --hover-color: gray !important;
+  --border-color: #000000 !important;
+  --header-background-color: #f0f0f0 !important;
+  --header-text-color: black !important;
+}
+
+body,
+#container {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+p,
+span,
+a,
+a:hover {
+  color: var(--text-color) !important;
+}
