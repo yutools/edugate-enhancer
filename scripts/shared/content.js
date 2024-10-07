@@ -2,6 +2,9 @@ setupFonts();
 setupTheme();
 setupLogo();
 removeElements();
+fixPrintButtonIfItExists();
+fixBackButtonIfItExists();
+fixNextButtonIfItExists();
 
 function setupFonts() {
   const link1 = document.createElement("link");
@@ -34,10 +37,11 @@ function setupTheme() {
 
 function setupLogo() {
   const logoElement = document
-    .querySelector("#container")
-    .querySelector("#all")
-    .querySelector("#top")
-    .querySelector(".logo");
+    ?.querySelector("#container")
+    ?.querySelector("#all")
+    ?.querySelector("#top")
+    ?.querySelector(".logo");
+  if (logoElement === null || logoElement === undefined) return;
 
   logoElement.innerHTML = "";
 
@@ -54,8 +58,44 @@ function setupLogo() {
 function removeElements() {
   // remove texter (copyright) from footer
   const footerCopyright = document
-    .querySelector("#footer")
-    .querySelector(".texter");
+    ?.querySelector("#footer")
+    ?.querySelector(".texter");
+  if (footerCopyright === null || footerCopyright === undefined) return;
 
   footerCopyright.innerHTML = "جميع الحقوق محفوظة جامعة اليمامة © 2024";
+}
+
+function fixPrintButtonIfItExists() {
+  let printButtons = document?.querySelectorAll(".printButton");
+  printButtons.forEach((printButton) => {
+    if (printButton === null || printButton === undefined) return;
+
+    if (printButton.title !== null) {
+      printButton.innerHTML = printButton.title;
+    }
+  });
+}
+
+function fixBackButtonIfItExists() {
+  let backButtons = document?.querySelectorAll(".backButton");
+  backButtons.forEach((backButton) => {
+    if (backButton === null || backButton === undefined) return;
+
+    backButton.innerHTML =
+      backButton.title == null || backButton.title === ""
+        ? "رجوع | Back"
+        : backButton.title;
+  });
+}
+
+function fixNextButtonIfItExists() {
+  let nextButtons = document?.querySelectorAll(".nextButton");
+  nextButtons.forEach((nextButton) => {
+    if (nextButton === null || nextButton === undefined) return;
+
+    nextButton.innerHTML =
+      nextButton.title == null || nextButton.title === ""
+        ? "التالي | Next"
+        : nextButton.title;
+  });
 }

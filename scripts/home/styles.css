@@ -23,7 +23,7 @@
 
   margin: auto;
   text-align: center;
-  background-color: rgb(243, 108, 36);
+  background-color: var(--primary-color);
   color: white !important;
   font-weight: medium;
   padding: 8px;

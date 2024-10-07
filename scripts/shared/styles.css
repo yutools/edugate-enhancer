@@ -52,7 +52,8 @@ body {
   border-radius: 8px !important;
 }
 
-h2 {
+h2,
+.fontTextTitle {
   font-weight: bold !important;
   color: #e0e0e0 !important;
 }
@@ -103,6 +104,44 @@ h2 {
 }
 
 .data_in_2 li {
+  color: var(--text-color) !important;
+}
+
+.ROW2 {
+  background-color: var(--card-color) !important;
+  color: var(--text-color) !important;
+}
+
+.ROW1 {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+.printButton,
+.backButton,
+.nextButton {
+  background-image: unset !important;
+  padding-right: unset !important;
+  float: unset !important;
+
+  margin: auto;
+  text-align: center;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  font-weight: medium;
+  padding: unset !important;
+  width: 100%;
+  margin: unset !important;
+  border-radius: 8px !important;
+  font-size: 1rem;
+}
+
+.ui-widget-content {
+  background-color: var(--card-color) !important;
+  color: var(--text-color) !important;
+}
+
+.fontText {
   color: var(--text-color) !important;
 }
 
